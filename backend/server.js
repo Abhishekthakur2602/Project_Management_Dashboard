@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+
 require("dotenv").config();
 
 const app = express();
@@ -14,7 +15,7 @@ mongoose
   .catch((err) => console.log(err));
 
 app.get("/", (req, res) => {
-  res.send("API Running");
+  res.send("Backend API Running");
 });
 
 const authRoutes = require("./routes/authRoutes");
