@@ -1,5 +1,4 @@
 .env
 node modules
-dist
 
 DS_Store
